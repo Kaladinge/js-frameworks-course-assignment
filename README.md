@@ -4,39 +4,39 @@
 
 A simple overview of the use/purpose of the project.
 
+
 ## Description
 
-A fully responsive site for selling books. There is a customer-side and an admin side. Api
+A fully responsive model site providing info about beverages at Beverages Inc. The site site make use of an API containing beverage entries.
 
-On the customer - side possible actions are:
-Using the Get method
--    to display all entries from the API
-  -  Display single entries with the id retrieved from the params
-Toggle books in and out of vart  and display these on a separate page
+Possible actions on the site are:
+- Using the Get method to:
+  1. to display all entries from the API
+  2. display single entries with the id retrieved from the URL parameter
+  
+- Toggling beverages in and out of favorites and then access these favorites on a separate page
 
-On the admin-side possible actions are:
-Using the Post method to add new entries to the Api
-Using the PUT method to edit properties of  existing entries
-Using the delete method to delete existing entries
+- Filling out a form with validation that tells the user what needs to be added in order to be able to submit the form
+
+- Logging in to the admin page by providing the correct username and password
 
 
 ## Built With
 
-You can list a the tech stack that you've used over here
+Tech stack used:
 
-- [React.js](https://reactjs.org/)
-- [Bootstrap](https://getbootstrap.com)
+- [Next.js](https://nextjs.org/)
+- [Wordpress](https://wordpress.com/) (for accessing JWT tokens after logging in)
+
 
 ## Getting Started
 
 ### Installing
 
-This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
-
 1. Clone the repo:
 
 ```bash
-git clone git@github.com:NoroffFEU/portfolio-1-example.git
+git clone git@github.com:Kaladinge/js-frameworks-course-assignment.git
 ```
 
 2. Install the dependencies:
@@ -47,12 +47,10 @@ npm install
 
 ### Running
 
-Here is where you detail how to run the app. It typically involves the commands you'd need to run to start the project e.g.
-
 To run the app, run the following commands:
 
 ```bash
-npm run start
+npm run dev
 ```
 
 ## Contributing
@@ -61,16 +59,4 @@ Here you can detail any information you want to provide regarding contributing t
 
 ## Contact
 
-This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
-
-[My Twitter page](www.twitter.com)
-
-[My LinkedIn page](www.linkedin.com)
-
-## License
-
-You can link to your license file here if you're using one, or mention what license the codebase falls under. If you're unsure then you can simply delete this section.
-
-## Acknowledgments
-
-This is where you can add any acknowledgements if you'd like, such as to people who have helped you or any code snippets you'd like to mention. You can delete this section if you don't have any acknowledgements to make.
+[My LinkedIn page](www.linkedin.com/in/lars-inge-g-johnsen)
