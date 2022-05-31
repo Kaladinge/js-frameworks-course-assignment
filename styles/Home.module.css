@@ -1,0 +1,23 @@
+.container {
+}
+
+.nav {
+  background-color: rgb(220, 191, 161);
+  color: white;
+}
+
+.logo {
+  color: rgb(131, 94, 83);
+}
+
+.hover {
+  cursor: pointer;
+}
+
+.active {
+  color: black;
+}
+
+.formContainer {
+  max-width: 800px;
+}
