@@ -1,78 +1,62 @@
-# JS Frameworks Course Assignment
+# Beverage Inc.
 
-install packages with "npm install" and open on local server with "npm run dev"
+![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
 
-## Brief
+A simple overview of the use/purpose of the project.
 
-Create either a new React or Next.js app in this repo.
 
-For the login functionality, use either a Wordpress installation with the <a href="https://wordpress.org/plugins/jwt-authentication-for-wp-rest-api/" target="_blank">JWT plugin from Module 3</a> installed, or a Strapi installation. Do not add either of these to your repo. Your API should remain a separate project. The markers will use their own installations when marking.
+## Description
 
-You can use either a REST or GraphQL API for the API calls.
+A fully responsive model site providing info about beverages at Beverages Inc. The site site make use of an API containing beverage entries.
 
----
+Possible actions on the site are:
+- Using the Get method to:
+  1. to display all entries from the API
+  2. display single entries with the id retrieved from the URL parameter
+  
+- Toggling beverages in and out of favorites and then access these favorites on a separate page
 
-## Level 1
+- Filling out a form with validation that tells the user what needs to be added in order to be able to submit the form
 
-Your app should have the following paths:
+- Logging in to the admin page by providing the correct username and password
 
-- "/"
-- "/detail/:param"
-- "/contact"
-- "/login"
-- "/admin"
 
-The admin path won't appear in your navigation.
+## Built With
 
-Use reusable components where appropriate and pay attention to how the components are arranged.
+Tech stack used:
 
-### Home
+- [Next.js](https://nextjs.org/)
+- [Wordpress](https://wordpress.com/) (for accessing JWT tokens after logging in)
 
-Find an API that returns at least:
 
-- an array of items
-- a single item retrieved by a parameter (id, name, slug, etc)
+## Getting Started
 
-If you are using Next you can also hard-code json and return it from API routes created in `pages/api/*`.
+### Installing
 
-You can use your own Wordpress or Strapi or any other API that you have created for these calls but it must be publically hosted - it must not be running on your localhost.
+1. Clone the repo:
 
-Display at least 2 properties from each result.
+```bash
+git clone git@github.com:Kaladinge/js-frameworks-course-assignment.git
+```
 
-Each result should link to the detail page, passing a parameter in the URL.
+2. Install the dependencies:
 
-### Detail
+```
+npm install
+```
 
-Retrieve the parameter from the URL and use it in an API call to fetch one item.
+### Running
 
-Display at least 3 properties from the item.
+To run the app, run the following commands:
 
-### Contact
+```bash
+npm run dev
+```
 
-Create a form with the following inputs and validation:
+## Contributing
 
-- First name - required, minimum 3 characters
-- Last name - required, minimum 4 characters
-- Email - required, must be in a valid email format
-- Subject - required, this must be a select box with at least 2 options
-- Message - required, minimum 10 characters.
+Here you can detail any information you want to provide regarding contributing to the project. For big projects you will usually have a separate `CONTRIBUTING.md` and link to it, but for smaller projects you can simply include instructions here. These instructions can simply detail the process you want a person to take, such as to make sure to open a pull request so code can be reviewed.
 
-### Login
+## Contact
 
-Create a form with username/email and password fields. The inputs should have the necessary validation for a login form (not a registration form).
-
-The form should make a login request to either a Wordpress API with the JWT plugin installed or a Strapi API. If the login is successful redirect the user to the admin route.
-
-If the login is unsuccessful display a message above the form.
-
-### Admin
-
-This page will simply display an "Admin" heading.
-
----
-
-## Level 2
-
-Add a favourite button/icon component to each result on your home page. Clicking this button will toggle the result in/out of a favourites array.
-
-Add a "/favourites" path to your routes. This page will display all the items currently in the favourites array.
+[My LinkedIn page](www.linkedin.com/in/lars-inge-g-johnsen)
