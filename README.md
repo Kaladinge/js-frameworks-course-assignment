@@ -2,7 +2,7 @@
 
 ![screenshot](/public/images/overview.png)
 
-A simple overview of the use/purpose of the project.
+A simple beverage website allowing users to find info about different beverages.
 
 
 ## Description
